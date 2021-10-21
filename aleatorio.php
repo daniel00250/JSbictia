@@ -31,12 +31,12 @@ const nuevo_estudiantes = estudiantes;
 
 console.log(nuevo_estudiantes);
 
-const grupos=estudiantes.length/2;
+const grupos=estudiantes.length;
 
 document.getElementById("demo1").innerHTML = typeof grupos;
 console.log(grupos);
 
-for (var i = 0; i <= grupos ; i++) {
+for (var i = 0; i <= grupos ; i+=2) {
  document.write("grupo  : " + nuevo_estudiantes[i] +" - "+ nuevo_estudiantes[i+1] +"<br>");
 }
 
